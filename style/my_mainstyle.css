@@ -1,0 +1,207 @@
+body { 
+    background-color: #d25f74;
+    background-image: url(/imgs/12.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:      Georgia, "Times New Roman", Times, serif;
+    margin:           0px;
+    color: #203e54;
+}
+header{
+    border-bottom: thin dotted #888888;
+}
+nav{
+    background-color: #203e54;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+ul{
+    list-style: none;
+}
+nav li{
+    font-size: large;
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+nav li a:hover{
+    transition: all .3s;
+    color:#d25f74;
+}
+nav li a{
+    color:            #efe5d0;
+}
+a:hover{
+    transition: all .3s;
+    color:#203e54;
+}
+#boards_list a{
+    border-bottom:dashed #efe5d0;
+}
+#boards_list li{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+a{
+    text-decoration:  none;
+    color: #efedee;
+}
+#regist{
+    float: right;
+}
+#regist a{
+    padding: .5em;
+    color:            #000b27;
+    border-bottom:    thin dotted #b76666;
+}
+#main{
+    margin: auto;
+    width: 100%;
+    display: table;
+	border-spacing: 1em;
+}
+#t_row{
+    display: table-row;
+}
+aside{
+    background-color: rgba(210,95,116,0.8);
+    display: table-cell;
+    padding: 1em;
+    margin: 1em;
+    border:dashed #203e54;
+    width:15em;
+}
+#user_borrow_main{
+    margin: 1em;
+    background-color: rgba(207, 128, 142, 0.85);
+    border:dashed #203e54;
+}
+textarea{
+    height: 10em;
+    width: 50%;
+}
+#borrow_checkbutton{
+    margin-left: 2em;
+}
+#borrow_book_list p{
+    margin-left: 2em;
+}
+#borrow_book_list{
+    margin: 1em;
+}
+.article_foot{
+    font-size: small;
+}
+.regist_ban h4{display: inline;}
+.regist_ban{
+    margin: auto;
+    width:40%;
+    background-color: rgba(207, 128, 142, 0.85);
+    border:dashed #203e54;
+    padding: 1em;
+}
+.user_return_show{
+    margin: 1em;
+    background-color: rgba(207, 128, 142, 0.85);
+    border:dashed #203e54;
+    padding: 1em;
+}
+#show_board,#searchshow{
+    border:dashed #203e54;
+    display: table-cell;
+    
+    padding: 1em;
+    background-color: rgba(207, 128, 142, 0.85);
+}
+footer{
+    background-color: #203e54;
+    color:            #efe5d0;
+    text-align:       center;
+    padding:          15px;
+    margin: 0px 10px 10px 10px;
+    font-size:        90%;
+}
+#search_text{
+    width: 30em;
+    height: 2.5em;
+    margin-right: 3em;
+}
+.search_contain{
+    margin: auto;
+    width:50%;
+    
+}
+#select{
+    display: table;
+}
+#t0_row{
+    display: table-row;
+}
+#t0_cell_1{
+    display: table-cell;
+}
+#t0_cell_2{
+    display: table-cell;
+}
+table{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	width:100%;
+	border-collapse:collapse;
+}
+table th 
+{
+	font-size:1.1em;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	background-color:#d25f74;
+	color:#efedee;
+}
+table td, table th 
+{
+	font-size:1em;
+	border:1px solid #d25f74;
+	padding:3px 5px 2px 5px;
+}
+.admin_oneboard{
+    border:dashed #203e54;
+    padding: 1em;
+}
+#icons {
+    margin: 0;
+    padding: 0;
+}
+#icons li {
+    margin: 2px;
+    position: relative;
+    padding: 4px 0;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+}
+#icons span.ui-icon {
+    float: left;
+    margin: 0 4px;
+}
+#p0{
+    border:dashed #203e54;
+    padding: 1em;
+    background-color: rgba(207, 128, 142, 0.85);
+}
+#p11{
+    padding: 1em;
+    background-color: rgba(207, 128, 142, 0.85);
+}
+#books_show{
+	margin: 1em;
+    width: 100%;
+}
+input[name='quantity']{
+    width: 3em;
+}
+input[name='bookclass'],input[name='booklang'],input[name='price']{
+    width: 4em;
+}
+input[name='ISBN'],input[name='bookname'],input[name='author'],input[name='publisher']{
+    width: 9em;
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/style/my_mainstyle.css" />
+		<link type="text/css" rel="stylesheet" href="/scripts/jquery-ui-1.13.1.custom/jquery-ui.min.css" />
+		<title>用户借书页</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div id="regist">
+				<a href='/login.html'>登录</a><a href='/users/regist.html'>注册</a>
+			</div>
+			<img src="/imgs/headerLogo.gif">
+			<nav><ul>
+				<li><a href='/index.html'>主页</a></li>
+				<li><a id="navi_borrow" href="/login.html">借书</a></li>
+				<li><a id="navi_return" href="/login.html">还书</a></li>
+			</ul></nav>
+		</header>
+		<div id="user_borrow_main"><from id='frm_borrow' method='POST' action="/book_service.php" onsubmit="return false">
+			<div id="borrow_book_list">
+			<ul>
+				<li>书0</li><li>书1</li>
+			</ul>
+			</div>
+		</from></div>
+		<footer>
+			CopyRight©2022-2022 by Zhennan Huang
+		</footer>
+		<script src="/scripts/jquery-3.6.0.js"></script>
+		<script src="/scripts/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+		<script src="/scripts/my_main.js" charset="utf-8"></script>
+	</body>
+</html>

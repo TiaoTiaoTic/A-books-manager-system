@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../style/my_mainstyle.css" />
+		<link type="text/css" rel="stylesheet" href="../scripts/jquery-ui-1.13.1.custom/jquery-ui.min.css" />
+		<title>借阅信息查询</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div id="regist">
+			<a>登录</a><a>注册</a>
+			</div>
+			<img src="../imgs/headerLogo.gif">
+			<nav><ul>
+				<li><a href='admin_users.html'>用户管理</a></li>
+				<li><a href='admin_books.html'>书籍管理</a></li>
+				<li><a href='admin_board.html'>公告管理</a></li>
+				<li><a href='admin_borrow.html'>查借阅</a></li>
+			</ul></nav>
+		</header>
+		<div id="main">
+			<div id="tabs">
+				<ul>
+					<li><a id='p1_b' href="#p1">根据用户查</a></li>
+					<li><a id='p2_b' href="#p2">根据书查</a></li>
+				</ul>
+				<div id="p1">
+					<div>
+						<div><input type="search" id="p1_text"><input id="p1_sbutton" type="button" value="搜索用户"></div>
+						<div class="radio_set">
+							<input type="radio" name="p1_isreturned" value="all" id="p1_radio_all"><label for="p1_radio_all">所有</label>
+							<input type="radio" name="p1_isreturned" value="borrow" id="p1_radio_borrow"><label for="p1_radio_borrow">借了没还的</label>
+							<input type="radio" name="p1_isreturned" value="return" id="p1_radio_return"><label for="p1_radio_return">已经还了的</label>
+						</div>
+					</div>
+					<div id="p1_show"><ul>
+					<li>借0</li><li>借1</li>
+					</ul></div>
+				</div>
+				<div id="p2">
+					<div>
+						<div><input type="search" id="p2_text"><input id="p2_sbutton" type="button" value="搜索书"></div>
+						<div class="radio_set">
+							<input type="radio" name="p2_isreturned" value="all" id="p2_radio_all"><label for="p2_radio_all">所有</label>
+							<input type="radio" name="p2_isreturned" value="borrow" id="p2_radio_borrow"><label for="p2_radio_borrow">借了没还的</label>
+							<input type="radio" name="p2_isreturned" value="return" id="p2_radio_return"><label for="p2_radio_return">已经还了的</label>
+						</div>
+					</div>
+					<div id="p2_show"><ul>
+					<li>借0</li><li>借1</li>
+					</ul></div>
+				</div>
+			</div>
+			
+		</div>
+		<footer>
+			CopyRight©2022-2022 by Zhennan Huang
+		</footer>
+		<script src="../scripts/jquery-3.6.0.js"></script>
+		<script src="../scripts/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+		<script src="../scripts/my_main_2.js" charset="utf-8"></script>
+	</body>
+</html>

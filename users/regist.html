@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/style/my_mainstyle.css" />
+		<link type="text/css" rel="stylesheet" href="/scripts/jquery-ui-1.13.1.custom/jquery-ui.min.css" />
+		<title>注册</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div id="regist">
+				<a href='/login.html'>登录</a><a href='/users/regist.html'>注册</a>
+			</div>
+			<img src="/imgs/headerLogo.gif">
+			<nav><ul>
+				<li><a href='/index.html'>主页</a></li>
+				<li><a id="navi_borrow" href="/login.html">借书</a></li>
+				<li><a id="navi_return" href="/login.html">还书</a></li>
+			</ul></nav>
+		</header>
+				<div class="regist_ban">
+				<form id='frm_regist' method='POST' action="/user_service.php" onsubmit="return false">
+					<p><h4>设定账号: </h4><input type="text" name="cuteID" required="required"></p>
+					<p><h4>设定密码: </h4><input type="password" name="password" required="required"></p>
+					<p><h4>确认密码：</h4><input type="password" name="password2" required="required"></p>
+					<p><h4>手机号：</h4><input type="tel" name="tel" required="required"></p>
+					<p><h4>邮箱：</h4><input type="email" name="email" required="required"></p>
+					<p><h4>出生日期：</h4><input type="date" name="birthday" required="required"></p>
+
+					<h4>性别：</h4>
+					<div id="regist_radio">
+					<input type="radio" name="sex" value='1' id="male" required="required"><label for="male">男</label>
+					<input type="radio" name="sex" value='2' id="female" required="required"><label for="female">女</label></div>
+					<p><h4>真名：</h4><input type="text" name="truename" required="required"></p>
+					<div><input id='regist_button' type="submit" value="注册！"></div>
+				</form>
+				</div>
+		<footer>
+			CopyRight©2022-2022 by Zhennan Huang
+		</footer>
+		<script src="/scripts/jquery-3.6.0.js"></script>
+		<script src="/scripts/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+		<script src="/scripts/my_main.js" charset="utf-8"></script>
+	</body>
+</html>

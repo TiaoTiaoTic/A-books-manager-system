@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../style/my_mainstyle.css" />
+		<link type="text/css" rel="stylesheet" href="../scripts/jquery-ui-1.13.1.custom/jquery-ui.min.css" />
+		<title>管理用户</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div id="regist">
+			<a>登录</a><a>注册</a>
+			</div>
+			<img src="../imgs/headerLogo.gif">
+			<nav><ul>
+				<li><a href='admin_users.html'>用户管理</a></li>
+				<li><a href='admin_books.html'>书籍管理</a></li>
+				<li><a href='admin_board.html'>公告管理</a></li>
+				<li><a href='admin_borrow.html'>查借阅</a></li>
+			</ul></nav>
+		</header>
+		<div id="main">
+			<div id="p11">
+				<div>
+					<input id='search_text' type="search"><input type="button" value="搜索" id="search_button">
+				</div>
+				<div id="users_show">
+					<p>人0</p><p>人1</p>
+				</div>
+			</div>
+			<div id="p0">
+				<a href="/admin/admin_users.html">返回</a>
+				<div>
+					<h4>请重置ID为<span id="p0_userID"></span>的用户的密码：</h4>
+					<p>输入密码:<input type="password" id="p0_psw"></p>
+					<p>确认密码:<input type="password" id="p0_psw_cfm"></p>
+					<p><input type="button" id="p0_button" value="改！"></p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			CopyRight©2022-2022 by Zhennan Huang
+		</footer>
+		<script src="../scripts/jquery-3.6.0.js"></script>
+		<script src="../scripts/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+		<script src="../scripts/my_main_2.js" charset="utf-8"></script>
+	</body>
+</html>

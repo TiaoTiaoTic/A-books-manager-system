@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/style/my_mainstyle.css" />
+		<link type="text/css" rel="stylesheet" href="/scripts/jquery-ui-1.13.1.custom/jquery-ui.min.css" />
+		<title>一个图书管理系统</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div id="regist">
+				<a href='/login.html'>登录</a><a href='/users/regist.html'>注册</a>
+			</div>
+			<img src="/imgs/headerLogo.gif">
+			<nav><ul>
+				<li><a href='/index.html'>主页</a></li>
+				<li><a id="navi_borrow" href="/login.html">借书</a></li>
+				<li><a id="navi_return" href="/login.html">还书</a></li>
+			</ul></nav>
+		</header>
+		<div id="main">
+			<div id="t_row">
+			<aside><h2>网站公告</h2>
+				<div>
+					<ul id='boards_list'><li>公告0</li><li>公告1</li></ul>
+				</div>
+			</aside>
+			<div id="searchshow">
+				<div class="search_contain"><form action="">
+					<input type="search" id='search_text'><input type="button" value="搜索" id='search_button'>
+				</form></div>
+				<div id="selectrecmd">
+					<div id="select">
+						<div id="t0_row">
+							<div id="t0_cell_1">
+							<h4>图书类别</h4>
+							<div id="class_selecter">
+								<input type="radio" name="sex" value="male">Male</br>
+								<input type="radio" name="sex" value="female">Female
+							</div>
+							</div>
+							<div id="t0_cell_2">
+							<h4>语言</h4>
+							<div id='lang_selecter'>
+							<input type="radio" name="lang" value="zh">鬃文</br>
+							<input type="radio" name="lang" value="en">英文
+							</div>
+							</div>
+					</div>
+					</div>
+					<div>
+						<h4>推荐书目</h4>
+					<ul>
+					<li><a id="recm0" href="#book_list">我的天才女友</a></li><li><a id="recm1" href="#book_list">数学分析</a></li>
+					</ul>
+					</div>
+				</div>
+				<div id="">
+				<div id="books_list"><p>书 0</p><p>书1</p></div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<footer>
+			CopyRight©2022-2022 by Zhennan Huang
+		</footer>
+		<script src="/scripts/jquery-3.6.0.js"></script>
+		<script src="/scripts/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+		<script src="/scripts/my_main.js" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<link rel="stylesheet" type="text/css" href="/style/my_mainstyle.css" />
+		<link type="text/css" rel="stylesheet" href="/scripts/jquery-ui-1.13.1.custom/jquery-ui.min.css" />
+		<title>管理公告</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div id="regist">
+			<a>登录</a><a>注册</a>
+			</div>
+			<img src="/imgs/headerLogo.gif">
+			<nav><ul>
+				<li><a href='/admin/admin_users.html'>用户管理</a></li>
+				<li><a href='/admin/admin_books.html'>书籍管理</a></li>
+				<li><a href='/admin/admin_board.html'>公告管理</a></li>
+				<li><a href='/admin/admin_borrow.html'>查借阅</a></li>
+			</ul></nav>
+		</header>
+		<div id="main">
+			<div id='tabs'>
+				<ul>
+					<li><a id='add_b' type="button" href="#p1">发布新公告</a></li>
+					<li><a id='change_b' type="button" href="#p2">改或删公告</a></li>
+				</ul>
+				<div id="p1">
+					<p>标题: <input type="text" id="board_title"></p>
+					<p>正文: <textarea id="board"></textarea></p>
+					<div><input type="button" value="发布！" id="board_button"></div>
+				</div>
+				<div id="p2">
+					<input type="date" id="date_picker"><input type="button" value="检索" id="date_button">
+					<ul id="boards_list">
+						<article><h4>文0</h4><p>正文0</p></article>
+						<article><h4>文1</h4><p>正文1</p></article>
+					</ul>
+				</div>
+			</div>
+				<div id="p0">
+					<a id="p0_return">返回</a>
+					<h4>请更改此公告：</h4>
+					<p>标题: <input type="text" id="p0_title"></p>
+					<p>正文: <textarea id="p0_board"></textarea></p>
+					<p><input type="button" id="p0_button" value="改！"></p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			CopyRight©2022-2022 by Zhennan Huang
+		</footer>
+		<script src="/scripts/jquery-3.6.0.js"></script>
+		<script src="/scripts/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+		<script src="/scripts/my_main_2.js" charset="utf-8"></script>
+	</body>
+</html>

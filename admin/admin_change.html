@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../style/my_mainstyle.css" />
+		<link type="text/css" rel="stylesheet" href="../scripts/jquery-ui-1.13.1.custom/jquery-ui.min.css" />
+		<title>管理员改密码页</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div id="regist">
+			<a>登录</a><a>注册</a>
+			</div>
+			<img src="../imgs/headerLogo.gif">
+			<nav><ul>
+				<li><a href='admin_users.html'>用户管理</a></li>
+				<li><a href='admin_books.html'>书籍管理</a></li>
+				<li><a href='admin_board.html'>公告管理</a></li>
+				<li><a href='admin_borrow.html'>查借阅</a></li>
+			</ul></nav>
+		</header>
+			<div class="regist_ban">
+			<h4>这里只能改你的密码哦，管理员</h4>
+			<form action="">
+			<p><h4>你的号: </h4><span id="aname">名字0</span></p>
+			<p><h4>现密码: </h4><input type="password" id="old_password"></p>
+			<p><h4>设定密码: </h4><input type="password" id="new_password"></p>
+			<p><h4>确认密码：</h4><input type="password" id="psw_confirm"></p>
+			<div><input type="button" value="改密码！" id="psw_button"></div>
+			</form>
+			</div>
+		<footer>
+			CopyRight©2022-2022 by Zhennan Huang
+		</footer>
+		<script src="../scripts/jquery-3.6.0.js"></script>
+		<script src="../scripts/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+		<script src="../scripts/my_main_2.js" charset="utf-8"></script>
+	</body>
+</html>

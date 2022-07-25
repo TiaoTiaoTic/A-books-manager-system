@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../style/my_mainstyle.css" />
+		<link type="text/css" rel="stylesheet" href="../scripts/jquery-ui-1.13.1.custom/jquery-ui.min.css" />
+		<title>管理书籍</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<div id="regist">
+				<a>登录</a><a>注册</a>
+			</div>
+			<img src="../imgs/headerLogo.gif">
+			<nav><ul>
+				<li><a href='admin_users.html'>用户管理</a></li>
+				<li><a href='admin_books.html'>书籍管理</a></li>
+				<li><a href='admin_board.html'>公告管理</a></li>
+				<li><a href='admin_borrow.html'>查借阅</a></li>
+			</ul></nav>
+		</header>
+		<div id="main">
+			<div>
+			<div id="tabs"><ul>
+				<li><a id='add_page' href="#p1">增书</a></li>
+				<li><a id='change_page' href="#p2">改，删书</a></li>
+			</ul>
+			<div id="p1">
+				<form action="" onsubmit="return false">
+					<p>ISBN: <input type="text" name="ISBN" required="required"></p>
+					<p>书名: <input type="text" name="bookname" required="required"></p>
+					<p>作者: <input type="text" name="author" required="required"></p>
+					<p>出版社: <input type="text" name="publisher" required="required"></p>
+					<p>出版日期: <input type="date" name="publish_date" required="required"></p>
+					<p>类别：<input type="text" name="bookclass" required="required"></p>
+					<p>语言：<input type="text" name="booklang" required="required"></p>
+					<p>价格（元）：<input type="text" name="price" required="required"></p>
+					<p>库存：<input type="number" name="quantity" required="required"></p>
+					<div><input id='add_book_button' type="submit" value="加书！" required="required"></div>
+				</form>
+			</div>
+			<div id="p2">
+			<div>
+				<input id='search_text' type="search"><input type="button" value="搜索" id="search_button">
+			</div>
+			<div id="books_show">
+				<p>书0</p><p>书1</p>
+			</div>
+			</div>
+		</div>
+			
+			</div>
+		</div>
+		<footer>
+			CopyRight©2022-2022 by Zhennan Huang
+		</footer>
+		<script src="../scripts/jquery-3.6.0.js"></script>
+		<script src="../scripts/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+		<script src="../scripts/my_main_2.js" charset="utf-8"></script>
+</html>
